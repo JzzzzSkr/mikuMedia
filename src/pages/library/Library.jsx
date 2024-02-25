@@ -1,18 +1,27 @@
 import React from "react";
 import "./Library.scss";
 import Feature from "./Feature/Feature";
+import Recommend from "./recommend/Recommend";
 
 const Library = () => {
   return (
     <div className="libraryWrapper">
       <div className="left">
-        <img src="./assets/l1.png" alt="" />
-        <div className="kiki">
-          <img src="./assets/l2.jpeg" alt="" />
+        <div className="top">
+          <img src="./assets/l1.png" alt="" />
+          <div className="kiki">
+            <img src="./assets/l2.jpeg" alt="" />
+          </div>
+          <p>Hi,my name is kiki !</p>
         </div>
-        <p>Hi,my name is kiki !</p>
 
         <Feature></Feature>
+
+        <h2 style={{marginTop:'2em'}}>Recommend song lists</h2>
+        <Recommend></Recommend>
+
+        {/* <Feature></Feature>
+        <Recommend></Recommend> */}
       </div>
       <div className="right">
         <div className="historyList">

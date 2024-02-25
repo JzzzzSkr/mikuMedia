@@ -4,10 +4,11 @@
   padding: 1em;
   backdrop-filter: blur(4px);
   background-color: rgba(0, 0, 0, 0.2);
+  // background-color: wheat;
 
   display: flex;
   overflow-y: auto;
-  max-height: 120vh;
+  // height: 120vh;
 
   .left {
     flex: 8;
@@ -15,6 +16,19 @@
     margin-right: 2em;
 
     position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    .top {
+      flex: 3;
+      // background-color: palegoldenrod
+    }
+
+    img {
+      border-radius: 10px;
+    }
+
     .kiki {
       position: absolute;
       top: 44px;
@@ -24,7 +38,6 @@
       border-radius: 20px;
       overflow: hidden;
       object-fit: cover;
-
     }
 
     p {
@@ -40,7 +53,7 @@
     background-color: rgb(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
-    height: 28em;
+    height: 30em;
     overflow-y: scroll;
 
     .historyList {
