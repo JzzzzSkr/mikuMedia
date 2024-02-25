@@ -1,0 +1,35 @@
+.layoutWrapper {
+  background-image: url("../../../public/assets/backgroundImg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+
+  padding: 3em 2em;
+
+  .mainContect {
+    background-color: black;
+    border-radius: 20px;
+    height: 100%;
+
+    // nav 和 main content 每个组件 必须加padding：1em
+    // padding: 1em;
+
+    overflow: hidden;
+
+    // 背景颜色变透明
+    background-color: rgba(0, 0, 0, 0.3);
+    // 背景虚化
+    backdrop-filter: blur(px);
+    display: flex;
+    flex-direction: column;
+
+    .top {
+      flex: 9;
+      // background-color: antiquewhite;
+
+      display: flex;
+    }
+  }
+}

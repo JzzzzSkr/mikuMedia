@@ -1,0 +1,71 @@
+// Base wrapper for the home component
+.homeWrapper {
+  flex: 9;
+  padding: 1em;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.2); // Semi-transparent background
+
+  // Search box container styling
+  .search-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+
+    // Search bar styling
+    .search-bar {
+      height: 40px;
+      display: flex;
+      width: 100%;
+      max-width: 400px; // Max width to keep the search bar from stretching too far
+      padding-left: 16px;
+      border-radius: 4px;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.2); // Semi-transparent background
+
+      // Input field styling
+      input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        background-color: var(--search-bg); // Using CSS variable for background
+        border-radius: 4px;
+        font-family: var(--body-font); // Using CSS variable for font family
+        font-size: 15px;
+        font-weight: 500;
+        padding: 0 15px;
+        color: white;
+        outline: none; // Removes the outline to match the design, consider accessibility
+      }
+    }
+  }
+
+  // Wrapper for the content below the search bar
+  .wrap {
+    padding: 20px;
+  }
+}
+
+// Styles related to Ant Design tabs
+.ant-tabs-top > .ant-tabs-nav:before {
+  border-bottom: transparent; // Makes the bottom border of the tabs transparent
+}
+
+// Utility and component-specific styles
+.search-bar {
+  max-width: 50%; // Limiting the search bar's width to half of its container
+}
+
+.SearchIcon {
+  color: gray; // Sets the color of the search icon
+}
+
+// Styles for inactive and active tabs
+.inactive-tab {
+  color: gray; // Color for inactive tabs
+}
+
+.active-tab {
+  color: white; // Color for the active tab
+}

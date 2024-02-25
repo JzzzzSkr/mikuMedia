@@ -1,0 +1,101 @@
+.navWrapper {
+  flex: 2;
+  // background-color: palegoldenrod;
+  padding: 1em;
+
+  .displayIcons {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    // background-color: palegoldenrod;
+
+    .icon-menu {
+      width: 15px;
+      height: 15px;
+      background-color: #f96057;
+      border-radius: 50%;
+      box-shadow: 24px 0 #f8ce52, 48px 0 #5fcf65;
+      margin-right: 195px;
+    }
+  }
+
+  .wrapper {
+    margin-top: 20px;
+  }
+
+  .user {
+    // background-color: palegoldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .userHeader {
+      background-color: palegreen;
+      width: 4em;
+      height: 4em;
+      border-radius: 50%;
+      overflow: hidden;
+      object-fit: cover;
+    }
+
+    .userName {
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+
+      .git {
+        border-radius: 10%;
+        width: 4em;
+        padding: 3px;
+        background-color: black;
+        margin-top: 0.5em;
+        text-decoration: none;
+        color: white;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+
+  .appMenu {
+    .side-title {
+      color: rgb(206, 206, 206);
+      margin-bottom: 14px;
+      font-weight: 200px;
+      // margin-left: 0.6em;
+    }
+
+    ul {
+      list-style-type: none;
+      .side-menu {
+        // background-color: palegoldenrod;
+        padding: 0.5em 3em;
+
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        text-align: center;
+        // background-color: palegoldenrod;
+        // transition: 0.3s;
+
+        text-decoration: none;
+        color: var(--theme-color);
+        font-weight: 400;
+        font-size: 14px;
+        border-radius: 6px;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          transition: 0.7s;
+          background-color: rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+}
