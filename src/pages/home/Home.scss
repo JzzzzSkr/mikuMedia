@@ -3,7 +3,9 @@
   flex: 9;
   padding: 1em;
   backdrop-filter: blur(4px);
-  background-color: rgba(0, 0, 0, 0.2); // Semi-transparent background
+  background-color: rgba(15, 12, 12, 0.2); // Semi-transparent background
+  max-height: 120vh;
+  // overflow-y: auto;
 
   // Search box container styling
   .search-box {

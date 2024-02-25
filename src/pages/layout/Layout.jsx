@@ -2,7 +2,7 @@ import React from "react";
 import "./Layout.scss";
 import { Outlet } from "react-router-dom";
 import Nav from "./nav/Nav";
-import Footer from "./footer/Footer";
+// import Footer from "./footer/Footer";
 
 const Layout = () => {
   return (
@@ -17,8 +17,10 @@ const Layout = () => {
         </div>
 
         {/* 这里的footer组件的布局应该分为左右，左边2，右边9 */}
-        <Footer></Footer>
+        
+        {/* <Footer></Footer> */}
       </div>
+      {/* <Footer></Footer> */}
     </div>
   );
 };

@@ -1,8 +1,101 @@
 .libraryWrapper {
-    flex: 9;
-    // background-color: palegreen;
-    padding: 1em;
-    backdrop-filter: blur(4px);
-    background-color: rgba(0, 0, 0, 0.2);
+  flex: 9;
+  // background-color: palegreen;
+  padding: 1em;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  overflow-y: auto;
+  max-height: 120vh;
+
+  .left {
+    flex: 8;
+    // background-color: palegoldenrod;
+    margin-right: 2em;
+
+    position: relative;
+    .kiki {
+      position: absolute;
+      top: 44px;
+      left: 36px;
+      width: 5em;
+      height: inherit;
+      border-radius: 20px;
+      overflow: hidden;
+      object-fit: cover;
+
+    }
+
+    p {
+      position: absolute;
+      top: 71px;
+      left: 124px;
+    }
   }
-  
+
+  .right {
+    flex: 3;
+    // background-color: palegreen;
+    background-color: rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 28em;
+    overflow-y: scroll;
+
+    .historyList {
+      margin: 2em;
+      font-family: Arial, Helvetica, sans-serif;
+
+      ul {
+        .songbox {
+          display: flex;
+          justify-content: left;
+          color: white;
+          // background-color: palegoldenrod;
+          margin: 1em 0;
+          // height: 3em;
+          align-items: center;
+
+          .musImg {
+            flex: 3;
+            width: 100%; /* Make the image fill the container */
+            height: 100%; /* Make the image fill the container */
+            object-fit: cover;
+            margin-right: 1em;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .MusicName {
+            flex: 10;
+            // background-color: palegoldenrod;
+            display: flex;
+            flex-direction: column;
+
+            .name {
+              color: white;
+              font-size: 12px;
+              margin-bottom: 1px;
+            }
+
+            .creater {
+              color: gray;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .libraryWrapper .left .kiki {
+    display: none;
+  }
+  .libraryWrapper .left p {
+    display: none;
+  }
+}
