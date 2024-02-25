@@ -1,4 +1,5 @@
 {
+  "homepage": "https://jzzzzskr.github.io/mikuMedia/",
   "name": "miku_music",
   "version": "0.1.0",
   "private": true,
@@ -26,7 +27,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -48,6 +51,7 @@
   },
   "devDependencies": {
     "@craco/craco": "^7.1.0",
+    "gh-pages": "^6.1.1",
     "video.js": "^8.10.0"
   }
 }
