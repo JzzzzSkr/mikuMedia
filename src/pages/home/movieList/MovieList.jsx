@@ -7,7 +7,7 @@ const MovieList = () => {
       <div className="box main">
         <div className="child-box">
           <a href="#movie">
-            <img src="./assets/your_name_poster.jpg" alt="Your name poster" />
+            <img src="./assets/Your_name_poster.jpg" alt="Your name poster" />
             <div className="down">
               <h3>Your name</h3>
             </div>
@@ -64,7 +64,7 @@ const MovieList = () => {
         </div>
         <div className="child-box">
           <a href="#movie">
-            <img src="./assets/your_name_poster.jpg" alt="Your name poster" />
+            <img src="./assets/Your_name_poster.jpg" alt="Your name poster" />
             <div className="down">
               <h3>Your name</h3>
             </div>
