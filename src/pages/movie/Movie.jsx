@@ -64,7 +64,7 @@ const Movie = () => {
         <div class="main">
           {episodes.map((episode) => (
             <div class="child-box">
-              <a href="">{episode}</a>
+              <a href="#movie">{episode}</a>
             </div>
           ))}
         </div>

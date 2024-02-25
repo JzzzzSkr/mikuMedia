@@ -3,7 +3,6 @@ import "./Home.scss";
 import SearchIcon from "@mui/icons-material/Search";
 import { Tabs } from "antd";
 import SongList from "./songlist/SongList";
-import Movie from "../movie/Movie";
 import MovieList from "./movieList/MovieList";
 
 const { TabPane } = Tabs;

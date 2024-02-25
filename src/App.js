@@ -1,14 +1,15 @@
 import React, { Suspense } from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/layout/Layout";
-import Home from "./pages/home/Home";
-import Library from "./pages/library/Library";
-import Movie from "./pages/movie/Movie";
+// 使用 React.lazy 进行动态导入
+const Home = React.lazy(() => import("./pages/home/Home"));
+const Library = React.lazy(() => import("./pages/library/Library"));
+const Movie = React.lazy(() => import("./pages/movie/Movie"));
 
 const App = () => {
   return (
     <HashRouter>
-      <Suspense fallback={<div></div>}>
+      <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
