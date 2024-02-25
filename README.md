@@ -1,4 +1,4 @@
-# 这款app是模仿ios的极简的前端风格，拥有播放音乐和播放视频的user interface。使用的技术有antdesigh的tabs，hashrouter，和video.js，grid响应式布局。
+# This app mimics the minimalist front-end style of iOS, featuring user interfaces for playing music and videos. It utilizes Ant Design's tabs, HashRouter, and Video.js for functionality, and employs a grid responsive layout for its design.
 
 # Home page（Song list）
 <img width="1439" alt="Screenshot 2024-02-25 at 23 07 50" src="https://github.com/JzzzzSkr/mikuMedia/assets/126542020/18bf593e-d787-4c3b-9a7b-f95a3bc3aabf">
