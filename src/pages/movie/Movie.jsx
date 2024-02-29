@@ -61,13 +61,13 @@ const Movie = () => {
           ))}
         </ul> */}
 
-        <div class="main">
-          {episodes.map((episode) => (
+        {/* <div class="main"> */}
+          {/* {episodes.map((episode) => (
             <div class="child-box">
               <a href="#movie">{episode}</a>
             </div>
-          ))}
-        </div>
+          ))} */}
+        {/* </div> */}
       </div>
     </div>
   );
